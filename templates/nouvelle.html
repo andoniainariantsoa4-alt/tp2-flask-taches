@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Nouvelle tâche</h1>
+<form method="POST">
+    <label>Titre : <input type="text" name="titre" required></label><br></br>
+    <label>Priorité :
+    <select name="priorite">
+        <option value="haute">Hautee</option>
+        <option value="normale" selected>Normale</option>
+        <option value="basse">Basse</option>
+    </select>
+    </label>
+    <button type="submit">Ajouter</button>
+</form>
+{% endblock %}
