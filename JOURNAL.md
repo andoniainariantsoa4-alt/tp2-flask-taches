@@ -24,5 +24,9 @@ Mission 4 : erreur endlock -> endlock corrigée
 - Correction :  renommer en endblock ligne 13 de base.html
 - Réseau : menu comun Accueil vixible sur / et /taches/2
 
-## Mission 5
-Formulaire d'ajout
+## Mission 5 : Formulaire d'ajout
+- Route /nouvelle GET + POST avec request.form
+- Erreurs rencontrées :
+    1. Adress already in use Port 5000 -> lsof -ti:5000 | xargs kill -9
+    2. Nameerror nouveau_id is not defined -> cause '==' au lie de '=' dans la ligne 25 de app.py
+- test : ajout "acheter du pain" O, redirection vers / avec 4 tâches
