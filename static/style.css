@@ -1,2 +1,5 @@
-body { font-family: sans-serif; max-width: 700px; margin: 20px auto; }
-nav a { margin-right: 10px; }
+body { font-family: Arial; max-width: 800px; margin: 20px auto; padding: 0 }
+nav { background: #f0f0f0; padding: 10px; margin-bottom: 20px; bordeer-radius: 5px; }
+nav a { text-decoration: none; margin-right: 10px; comor: #333; font-weight: bold;}
+li { margin: 8px; }
+.haute { color: red; font-weight: bold;}

@@ -4,7 +4,9 @@
 <ul>
     {% for t in taches %}
     <li>
-        <a href="/taches/{{ t.id }}">{{ t.id }} - {{ t.titre }}</a> ({{ t.priorite }}) {% if t.terminee %}YES{% else %} NO{% endif %}
+        <a href="/taches/{{ t.id }}">{{ t.id }} - {{ t.titre }}</a> 
+        (<span class="{{ t.priorite }}">{{ t.priorite }}</span>) 
+        {% if t.terminee %}O.K{% else %} K.O{% endif %}
      </li>
     {% endfor %}
 </ul>
