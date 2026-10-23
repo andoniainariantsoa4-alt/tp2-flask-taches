@@ -1,0 +1,10 @@
+<h1>Mes tâches</h1>
+<ul>
+{% for t in taches %}
+    <li>
+        {{ t.id }} - {{ t.titre }} ({{ t.priorite }})
+        {% if t.terminee %}YES{% else %}NO{% endif %} 
+    </li>
+
+{% endfor %}
+</ul>
