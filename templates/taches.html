@@ -1,10 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
 <h1>Mes tâches</h1>
 <ul>
-{% for t in taches %}
+    {% for t in taches %}
     <li>
-        {{ t.id }} - {{ t.titre }} ({{ t.priorite }})
-        {% if t.terminee %}YES{% else %}NO{% endif %} 
-    </li>
-
-{% endfor %}
+        <a href="/taches/{{ t.id }}">{{ t.id }} - {{ t.titre }}</a> ({{ t.priorite }}) {% if t.terminee %}YES{% else %} NO{% endif %}
+     </li>
+    {% endfor %}
 </ul>
+{% endblock %}
